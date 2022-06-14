@@ -33,7 +33,7 @@ function useColor() {
       setStatus("Neutral");
     }
   };
-
+  // cycles through if else statements using colors linked with the status of useColor
   const backgroundColor =
     status === "Neutral"
       ? "gray"
@@ -47,7 +47,6 @@ function useColor() {
 }
 
 // Buttons
-//= status === "Neutral" ? "gray" : "blue";
 
 const Filet = () => {
   const { backgroundColor, onPress } = useColor();

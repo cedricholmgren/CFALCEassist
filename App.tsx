@@ -7,12 +7,59 @@ export default function App() {
     <View style={styles.container}>
       <StatusBar style="auto" />
 
-      <Filet />
-      <Nuggets />
-      <Spicy />
-      <Strips />
-      <GrilledFilets />
-      <GrilledNuggets />
+      <View style={styles.row}>
+        <View style={styles.fifty}>
+          <FiletBanner />
+        </View>
+        <View style={styles.fifty}>
+          <Filet />
+        </View>
+      </View>
+
+      <View style={styles.row}>
+        <View style={styles.fifty}>
+          <NuggetBanner />
+        </View>
+        <View style={styles.fifty}>
+          <Nuggets />
+        </View>
+      </View>
+
+      <View style={styles.row}>
+        <View style={styles.fifty}>
+          <SpicyBanner />
+        </View>
+        <View style={styles.fifty}>
+          <Spicy />
+        </View>
+      </View>
+
+      <View style={styles.row}>
+        <View style={styles.fifty}>
+          <StripsBanner />
+        </View>
+        <View style={styles.fifty}>
+          <Strips />
+        </View>
+      </View>
+
+      <View style={styles.row}>
+        <View style={styles.fifty}>
+          <GrilledfiletBanner />
+        </View>
+        <View style={styles.fifty}>
+          <GrilledFilets />
+        </View>
+      </View>
+
+      <View style={styles.row}>
+        <View style={styles.fifty}>
+          <GrillednuggetBanner />
+        </View>
+        <View style={styles.fifty}>
+          <GrilledNuggets />
+        </View>
+      </View>
     </View>
   );
 }
@@ -40,7 +87,7 @@ function useColor() {
       : status === "MakeLess"
       ? "red"
       : status === "MakeMore"
-      ? "green"
+      ? "limegreen"
       : "gray";
 
   return { backgroundColor, onPress };
@@ -121,6 +168,51 @@ const GrilledNuggets = () => {
   );
 };
 
+// Button side banners
+
+const FiletBanner = () => {
+  return (
+    <View style={styles.FsideBanner}>
+      <Text style={styles.textConfig}>Filets</Text>
+    </View>
+  );
+};
+const NuggetBanner = () => {
+  return (
+    <View style={styles.NsideBanner}>
+      <Text style={styles.textConfig}>Nuggets</Text>
+    </View>
+  );
+};
+const SpicyBanner = () => {
+  return (
+    <View style={styles.SsideBanner}>
+      <Text style={styles.textConfig}>Spicy</Text>
+    </View>
+  );
+};
+const StripsBanner = () => {
+  return (
+    <View style={styles.STsideBanner}>
+      <Text style={styles.textConfig}>Strips</Text>
+    </View>
+  );
+};
+const GrilledfiletBanner = () => {
+  return (
+    <View style={styles.GFsideBanner}>
+      <Text style={styles.textConfig}>Grilled Filets</Text>
+    </View>
+  );
+};
+const GrillednuggetBanner = () => {
+  return (
+    <View style={styles.GNsideBanner}>
+      <Text style={styles.textConfig}>Grilled Nuggets</Text>
+    </View>
+  );
+};
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -128,10 +220,60 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
   },
+  row: {
+    flexDirection: "row",
+    flex: 1,
+  },
+
+  fifty: {
+    flex: 1,
+    alignItems: "center",
+  },
   buttonBox: {
-    width: 320,
-    height: 40,
+    width: 160,
+    height: 90,
     //flex: 1,
-    marginBottom: 40,
+    marginBottom: 20,
+  },
+
+  textConfig: {
+    fontSize: 20,
+  },
+  // Side banners
+  FsideBanner: {
+    width: 160,
+    height: 90,
+    marginBottom: 20,
+    backgroundColor: "blue",
+  },
+  NsideBanner: {
+    width: 160,
+    height: 90,
+    marginBottom: 20,
+    backgroundColor: "pink",
+  },
+  SsideBanner: {
+    width: 160,
+    height: 90,
+    marginBottom: 20,
+    backgroundColor: "orangered",
+  },
+  STsideBanner: {
+    width: 160,
+    height: 90,
+    marginBottom: 20,
+    backgroundColor: "green",
+  },
+  GFsideBanner: {
+    width: 160,
+    height: 90,
+    marginBottom: 20,
+    backgroundColor: "darkkhaki",
+  },
+  GNsideBanner: {
+    width: 160,
+    height: 90,
+    marginBottom: 20,
+    backgroundColor: "lightslategrey",
   },
 });

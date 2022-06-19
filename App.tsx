@@ -60,6 +60,7 @@ export default function App() {
           <GrilledNuggets />
         </View>
       </View>
+      <EmptySpace />
     </View>
   );
 }
@@ -213,6 +214,12 @@ const GrillednuggetBanner = () => {
   );
 };
 
+//empty space for formatting
+
+const EmptySpace = () => {
+  return <View style={styles.emptySpace}></View>;
+};
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -232,8 +239,9 @@ const styles = StyleSheet.create({
   buttonBox: {
     width: 160,
     height: 90,
-    //flex: 1,
+    flex: 1,
     marginBottom: 20,
+    marginTop: 20,
   },
 
   textConfig: {
@@ -241,39 +249,56 @@ const styles = StyleSheet.create({
   },
   // Side banners
   FsideBanner: {
+    flex: 1,
     width: 160,
     height: 90,
     marginBottom: 20,
+    marginTop: 20,
     backgroundColor: "blue",
   },
   NsideBanner: {
+    flex: 1,
     width: 160,
     height: 90,
     marginBottom: 20,
     backgroundColor: "pink",
+    marginTop: 20,
   },
   SsideBanner: {
+    flex: 1,
     width: 160,
     height: 90,
     marginBottom: 20,
     backgroundColor: "orangered",
+    marginTop: 20,
   },
   STsideBanner: {
+    flex: 1,
     width: 160,
     height: 90,
     marginBottom: 20,
     backgroundColor: "green",
+    marginTop: 20,
   },
   GFsideBanner: {
+    flex: 1,
     width: 160,
     height: 90,
     marginBottom: 20,
     backgroundColor: "darkkhaki",
+    marginTop: 20,
   },
   GNsideBanner: {
+    flex: 1,
     width: 160,
     height: 90,
     marginBottom: 20,
     backgroundColor: "lightslategrey",
+    marginTop: 20,
+  },
+  emptySpace: {
+    flex: 1,
+    width: 160,
+    height: 90,
   },
 });

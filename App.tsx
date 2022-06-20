@@ -222,6 +222,7 @@ const EmptySpace = () => {
 
 const styles = StyleSheet.create({
   container: {
+    flexDirection: "column",
     flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
@@ -237,9 +238,9 @@ const styles = StyleSheet.create({
     alignItems: "center",
   },
   buttonBox: {
+    flexGrow: 1,
     width: 160,
-    height: 90,
-    flex: 1,
+    height: 70,
     marginBottom: 20,
     marginTop: 20,
   },
@@ -298,7 +299,7 @@ const styles = StyleSheet.create({
   },
   emptySpace: {
     flex: 1,
-    width: 160,
-    height: 90,
+    //width: 160,
+    //height: 90,
   },
 });

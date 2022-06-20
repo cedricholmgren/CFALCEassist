@@ -238,8 +238,8 @@ const styles = StyleSheet.create({
   },
   buttonBox: {
     width: 160,
-    height: 90,
-    flex: 1,
+    height: 70,
+    //flex: 1,
     marginBottom: 20,
     marginTop: 20,
   },

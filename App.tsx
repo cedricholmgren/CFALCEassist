@@ -245,7 +245,7 @@ const styles = StyleSheet.create({
   },
 
   textConfig: {
-    fontSize: 20,
+    fontSize: 200,
   },
   // Side banners
   FsideBanner: {

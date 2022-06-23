@@ -60,7 +60,6 @@ export default function App() {
           <GrilledNuggets />
         </View>
       </View>
-      <EmptySpace />
     </View>
   );
 }
@@ -91,6 +90,7 @@ function useColor() {
       ? "limegreen"
       : "gray";
 
+  const writestatus = status;
   return { backgroundColor, onPress };
 }
 
@@ -240,7 +240,7 @@ const styles = StyleSheet.create({
   buttonBox: {
     flexGrow: 1,
     width: 160,
-    height: 70,
+    height: 140,
     marginBottom: 20,
     marginTop: 20,
   },

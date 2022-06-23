@@ -90,81 +90,92 @@ function useColor() {
       ? "limegreen"
       : "gray";
 
-  const writestatus = status;
-  return { backgroundColor, onPress };
+  return { backgroundColor, onPress, status };
 }
 
 // Buttons
 
 const Filet = () => {
-  const { backgroundColor, onPress } = useColor();
+  const { backgroundColor, onPress, status } = useColor();
   const filetColor = { backgroundColor };
   return (
     <View>
       <TouchableOpacity
         style={[styles.buttonBox, filetColor]}
         onPress={onPress}
-      ></TouchableOpacity>
+      >
+        <Text style={styles.textConfig}>{status}</Text>
+      </TouchableOpacity>
     </View>
   );
 };
 const Nuggets = () => {
-  const { backgroundColor, onPress } = useColor();
+  const { backgroundColor, onPress, status } = useColor();
   const filetColor = { backgroundColor };
   return (
     <View>
       <TouchableOpacity
         style={[styles.buttonBox, filetColor]}
         onPress={onPress}
-      ></TouchableOpacity>
+      >
+        <Text style={styles.textConfig}>{status}</Text>
+      </TouchableOpacity>
     </View>
   );
 };
 const Spicy = () => {
-  const { backgroundColor, onPress } = useColor();
+  const { backgroundColor, onPress, status } = useColor();
   const filetColor = { backgroundColor };
   return (
     <View>
       <TouchableOpacity
         style={[styles.buttonBox, filetColor]}
         onPress={onPress}
-      ></TouchableOpacity>
+      >
+        <Text style={styles.textConfig}>{status}</Text>
+      </TouchableOpacity>
     </View>
   );
 };
 const Strips = () => {
-  const { backgroundColor, onPress } = useColor();
+  const { backgroundColor, onPress, status } = useColor();
   const filetColor = { backgroundColor };
   return (
     <View>
       <TouchableOpacity
         style={[styles.buttonBox, filetColor]}
         onPress={onPress}
-      ></TouchableOpacity>
+      >
+        <Text style={styles.textConfig}>{status}</Text>
+      </TouchableOpacity>
     </View>
   );
 };
 const GrilledFilets = () => {
-  const { backgroundColor, onPress } = useColor();
+  const { backgroundColor, onPress, status } = useColor();
   const filetColor = { backgroundColor };
   return (
     <View>
       <TouchableOpacity
         style={[styles.buttonBox, filetColor]}
         onPress={onPress}
-      ></TouchableOpacity>
+      >
+        <Text style={styles.textConfig}>{status}</Text>
+      </TouchableOpacity>
     </View>
   );
 };
 const GrilledNuggets = () => {
-  const { backgroundColor, onPress } = useColor();
+  const { backgroundColor, onPress, status } = useColor();
   const filetColor = { backgroundColor };
   return (
     <View>
       <TouchableOpacity
         style={[styles.buttonBox, filetColor]}
         onPress={onPress}
-      ></TouchableOpacity>
+      >
+        <Text style={styles.textConfig}>{status}</Text>
+      </TouchableOpacity>
     </View>
   );
 };
